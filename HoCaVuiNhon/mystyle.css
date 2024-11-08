@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #87CEEB; 
+    font-family: Arial, sans-serif;
+}
+
+
+.ocean {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url(./images/ocean.jpg);
+    background-size: cover; 
+    background-position: center;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+}
+
+
+.fish {
+    background-image: url(./images/magikarp.gif);
+    position: absolute;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 40px;
+    object-fit: contain; 
+    animation: swimBackAndForth 8s infinite ease-in-out; 
+}
+
+
+.fish1 {
+    top: 20%;
+    left: 50px; 
+    animation-delay: 0s;
+}
+
+.fish2 {
+    top: 30%;
+    left: 40px; 
+    animation-delay: 1s;
+}
+
+.fish3 {
+    top: 50%;
+    left: 40px;
+    animation-delay: 2s;
+}
+
+.fish4 {
+    top: 10%;
+    left: 20px; 
+    animation-delay: 3s;
+}
+
+.fish5 {
+    top: 70%;
+    left: 10px; 
+    animation-delay: 4s;
+}
+
+.fish6 {
+    top: 40%;
+    left: 0px; 
+    animation-delay: 5s;
+}
+
+
+@keyframes swimBackAndForth {
+    0% {
+        transform: translateX(0) translateY(0) scaleX(-1); 
+    }
+    25% {
+        transform: translateX(80vw) translateY(-30px) scaleX(-1);
+    }
+    50% {
+        transform: translateX(90vw) translateY(0) scaleX(-1); 
+    }
+    51% {
+        transform: translateX(90vw) translateY(0) scaleX(1); 
+    }
+    75% {
+        transform: translateX(80vw) translateY(30px) scaleX(1); 
+    }
+    100% {
+        transform: translateX(0) translateY(0) scaleX(1);
+    }
+}
+
+.fish1 {
+    animation: swimBackAndForth 10s infinite ease-in-out; 
+}
+
+.fish2 {
+    animation: swimBackAndForth 8s infinite ease-in-out; 
+}
+
+.fish3 {animation: swimBackAndForth 6s infinite ease-in-out;
+}
+
+.fish4 {
+    animation: swimBackAndForth 12s infinite ease-in-out; 
+}
+
+.fish5 {
+    animation: swimBackAndForth 7s infinite ease-in-out; 
+}
+
+.fish6 {
+    animation: swimBackAndForth 9s infinite ease-in-out; 
+}
+
+/* Thêm cá mập */
+.shark {
+    background-image: url(./images/kyogre.gif);
+    position: absolute;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 348px;
+    height: 298px;
+    object-fit: contain; 
+    top: 40%;
+    left: -150px; 
+    animation: sharkChase 8s linear infinite; 
+}
+
+.shark2 {
+    background-image: url(./images/shark.gif);
+    position: absolute;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 100px;
+    object-fit: contain; 
+    top: 45%;
+    left: -10px;
+    animation-delay: 3s;
+    animation: swimBackAndForth 7s infinite ease-in-out ;
+}
+
+@keyframes sharkChase {
+    0% {
+        transform: translateX(10) translateY(50%) scaleX(-1); 
+    }
+    10% {
+        transform: translateX(20vw) translateY(20%) scaleX(-1); 
+    }
+    20% {
+        transform: translateX(40vw) translateY(40%) scaleX(-1); 
+    }
+    30% {
+        transform: translateX(60vw) translateY(60%) scaleX(-1); 
+    }
+    40% {
+        transform: translateX(80vw) translateY(80%) scaleX(-1); 
+    }
+    50% {
+        transform: translateX(100vw) translateY(100%) scaleX(1);
+    }
+    600% {
+        transform: translateX(80vw) translateY(80%) scaleX(1); 
+    }
+    70% {
+        transform: translateX(60vw) translateY(60%) scaleX(1);
+    }
+    80% {
+        transform: translateX(40vw) translateY(40%) scaleX(1); 
+    }
+    90% {
+        transform: translateX(20vw) translateY(20%) scaleX(1);
+    }
+    100% {
+        transform: translateX(10) translateY(50%) scaleX(1); 
+    }
+}
+
+.crab {
+    background-image: url(./images/crab.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    top: 80%;
+    left: -100px;
+    animation: crabWalk 15s infinite linear;
+}
+
+
+@keyframes crabWalk {
+    0% {
+        left: -100px; 
+    }
+    25% {
+        left: 30%; 
+    }
+    50% {
+        left: 50%; 
+    }
+    75% {
+        left: 70%;
+    }
+    100% {
+        left: 100vw; 
+    }
+}
+
+@keyframes crabWalk2 {
+    0% {
+        right: -100px; 
+    }
+    25% {
+        right: 30%; 
+    }
+    50% {
+        right: 50%; 
+    }
+    75% {
+        right: 70%; 
+    }
+    100% {
+        right: 100vw; 
+    }
+}
+
+.crab2 {
+    background-image: url(./images/crab.gif);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    top: 90%;
+    right: -100px;
+    animation: crabWalk2 15s infinite linear;
+}
+
+
+@keyframes crabWalk2 {
+    0% {
+        right: -100px; 
+    }
+    25% {
+        right: 30%; 
+    }
+    50% {
+        right: 50%; 
+    }
+    75% {
+        right: 70%;
+    }
+    100% {
+        right: 100vw;
+    }
+}
+
+@keyframes crabWalk2 {
+    0% {
+        right: -100px; 
+    }
+    25% {
+        right: 30%; 
+    }
+    50% {
+        right: 50%;
+    }
+    75% {
+        right: 70%; 
+    }
+    100% {
+        right: 100vw; 
+    }
+}
+/* Thêm sứa */
+.jellyfish {
+    background-image: url(./images/jellyfish.gif);
+    position: absolute;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10%; 
+    height: 10%;
+    object-fit: contain;
+    animation: jellyfishSwim 8s infinite ease-in-out;
+}
+
+.jellyfish1 {
+    left: 10vw;
+    animation-delay: 0s;
+    bottom: -100px; 
+}
+
+.jellyfish2 {
+    left: 30vw;
+    animation-delay: 1s;
+    bottom: -100px; 
+}
+
+.jellyfish3 {
+    left: 45vw;
+    animation-delay: 2s;
+    bottom: -100px; 
+}
+.jellyfish4 {
+   
+    left: 70vw;
+    animation-delay: 3s;
+    bottom: -100px; 
+}
+
+@keyframes jellyfishSwim {
+    0% {
+        transform: translateY(0);/
+    }
+    50% {
+        transform: translateY(-80vh); 
+    }
+    100% {
+        transform: translateY(-100vh); 
+    }
+}
+
+@keyframes oceanWaves {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+.ocean {
+    animation: oceanWaves 30s linear infinite;
+}
